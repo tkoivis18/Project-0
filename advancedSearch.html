@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Search</title>
+    <style>
+      input[type='text'] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type='submit'] {
+        background-color: aqua;
+        border: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="text-align: right"><a href="index.html">Google Search</a></div>
+    <form action="https://google.com/search">
+      <label for="all">all these words:</label>
+      <input id="all" type="text" name="as_q" />
+      <label for="exact">this exact word or phrase:</label>
+      <input id="exact" type="text" name="as_epq" />
+      <label for="any">any of these words:</label>
+      <input id="any" type="text" name="as_oq" />
+      <label for="none">none of these words:</label>
+      <input id="none" type="text" name="as_eq" />
+      <input type="submit" value="Advanced Search" />
+    </form>
+  </body>
+</html>
